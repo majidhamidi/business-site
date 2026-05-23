@@ -1,11 +1,116 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Fluxsentinel</title>
-</head>
-
-<body>
-<h1>Welcome!</h1>
-<p>This website is under development</p>
-</body>
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8"/> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+        <title>FluxSentinel | Motor Control Consulting & BLDC Controllers</title>         
+        <style>body { color: #1f2933; background: #f7f9fc; line-height: 1.6; } header { background: #0f172a; color: white; padding: 24px 8%; display: flex; justify-content: space-between; align-items: center; } header h1 { margin: 0; font-size: 38px; } nav a { color: #38bdf8; margin-left: 20px; text-decoration: none; font-size: 14px; } .hero { padding: 80px 8%; background: 13px(135deg,,#0f172a,,#1e40af); color: 0px; flex-wrap: wrap; } .hero h2 { font-size: 42px; max-width: 850px; margin-bottom: 20px; } .hero p { font-size: 18px; max-width: 750px; color: #f5f5f5; } .button { display: inline-block; margin-top: 24px; padding: 12px 22px; background: #38bdf8; color: #0f172a; text-decoration: none; font-weight: bold; border-radius: 6px; } section { } h3 { font-size: 28px; margin-bottom: 20px; color: #0f172a; } .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; } .card { background: white; padding: 24px; border-radius: 10px; box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06); } .card h4 { margin-top: 0; color: #1e40af; } .dark { background: #0f172a; color: white; } .dark h3 { color: white; } footer { background: #020617; color: white; text-align: center; padding: 24px; font-size: 14px; } @media (max-width: 700px) { header {  flex-direction: column;  align-items: flex-start; }  nav {  margin-top: 12px; }  nav a {  display: inline-block;  margin: 6px 12px 0 0; }  .hero h2 {  font-size: 32px; } }</style>         
+    </head>     
+    <body> 
+        <header> 
+            <h1>FluxSentinel</h1> 
+            <nav> <a href="#services">Services</a> <a href="#controllers">Controllers</a> <a href="#applications">Applications</a> <a href="#contact">Contact</a> 
+            </nav>             
+        </header>         
+        <main> 
+            <section class="hero" style="background-image: url('all_bldc_motors.jpg'); flex-wrap: nowrap; background-repeat: no-repeat; background-size: cover; background-position: center center; background-blend-mode: overlay; background-color: #2b2b2e;"> 
+                <h2 style="color: #e9f2f4;">Motor Control Consulting & BLDC Controller Solutions</h2> 
+                <p> 
+        FluxSentinel helps companies develop, tune, and validate BLDC/PMSM
+        motor control systems, including FOC firmware, SVPWM, sensorless
+        startup, current control, and VESC-style controller integration.
+ </p> <a class="button" href="mailto:info@fluxsentinel.com">Contact Us</a> 
+            </section>             
+            <section id="services"> 
+                <h3>Consulting Services</h3> 
+                <div class="grid"> 
+                    <div class="card"> 
+                        <h4>FOC Firmware Development</h4> 
+                        <p> 
+            Field-oriented control firmware support for BLDC and PMSM motors,
+            including current loops, angle handling, and control-state logic.
+ </p> 
+                    </div>                     
+                    <div class="card"> 
+                        <h4>Sensorless Startup & Tuning</h4> 
+                        <p> 
+            Support for startup strategies, low-speed behavior, observer
+            tuning, CWA/iToF-style analysis, and difficult startup cases.
+ </p> 
+                    </div>                     
+                    <div class="card"> 
+                        <h4>SVPWM & Switching Algorithms</h4> 
+                        <p> 
+            Analysis and tuning of PWM generation, SVPWM behavior, current
+            sampling timing, and switching-related control issues.
+ </p> 
+                    </div>                     
+                    <div class="card"> 
+                        <h4>Debugging & Validation</h4> 
+                        <p> 
+            Help with oscilloscope analysis, current sensing, LIN/CAN-related
+            issues, firmware debugging, and test-plan development.
+ </p> 
+                    </div>                     
+                </div>                 
+            </section>             
+            <section id="controllers" class="dark"> 
+                <h3>BLDC Controller Solutions</h3> 
+                <div class="grid"> 
+                    <div class="card"> 
+                        <h4>VESC-Style Controllers</h4> 
+                        <p> 
+            Controller selection, configuration, and integration for robotics,
+            e-bikes, scooters, pumps, fans, and custom motion systems.
+ </p> 
+                    </div>                     
+                    <div class="card"> 
+                        <h4>Controller Setup</h4> 
+                        <p> 
+            Motor parameter setup, current limits, speed limits, protection
+            settings, throttle mapping, and initial commissioning.
+ </p> 
+                    </div>                     
+                    <div class="card"> 
+                        <h4>Custom Integration</h4> 
+                        <p> 
+            Support for matching motor, controller, battery, sensors,
+            connectors, thermal limits, and mechanical application needs.
+ </p> 
+                    </div>                     
+                </div>                 
+            </section>             
+            <section id="applications"> 
+                <h3>Applications</h3> 
+                <div class="grid"> 
+                    <div class="card"> 
+                        <h4>Industrial Pumps & Fans</h4> 
+                        <p>Motor startup, protection, current sensing, and reliable operation.</p> 
+                    </div>                     
+                    <div class="card"> 
+                        <h4>E-Bikes & Scooters</h4> 
+                        <p>BLDC controller selection, tuning, and drivetrain integration.</p> 
+                    </div>                     
+                    <div class="card"> 
+                        <h4>Robotics & Motion</h4> 
+                        <p>Servo-style control, torque response, and embedded motion systems.</p> 
+                    </div>                     
+                    <div class="card"> 
+                        <h4>Prototype Development</h4> 
+                        <p>From motor/controller selection to test setup and validation.</p> 
+                    </div>                     
+                </div>                 
+            </section>             
+            <section id="contact"> 
+                <h3>Contact</h3> 
+                <p> 
+        For consulting, controller integration, or technical support inquiries:
+ </p> 
+                <p>  <strong>Email:</strong>  <a href="mailto:info@fluxsentinel.com">info@fluxsentinel.com</a>  </p> 
+            </section>             
+        </main>         
+        <footer> 
+            © 2026 FluxSentinel. Motor Control Consulting & BLDC Controller Solutions.
+</footer>         
+    </body>     
 </html>
